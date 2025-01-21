@@ -3,13 +3,13 @@ import { HeroVideoDialogDemo } from "@/components/hero"; // Adjust the path to w
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen flex items-center justify-center bg-gray-100">
       <NavBar />
 
       {/* Hero Section with Flexbox Layout */}
-      <section className="flex flex-col md:flex-row items-center justify-between p-8">
+      <section className="flex flex-col md:flex-row items-center justify-center w-full p-8">
         {/* Left side content */}
-        <div className="w-full md:w-1/2 pr-8 mb-8 md:mb-0">
+        <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Water Management</h1>
           <p className="text-lg mb-4">
             Welcome to the Water Management project! We aim to provide
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Right side video dialog */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <HeroVideoDialogDemo />
         </div>
       </section>
