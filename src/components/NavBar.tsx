@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,26 +15,26 @@ const NavBar = () => {
           {/* Logo/Name */}
           <div className="flex items-center space-x-8">
             <h1 className="text-2xl font-bold">Water Management</h1>
-            
+
             {/* Navigation Links */}
             <div className="flex items-center space-x-4">
               <Button variant="ghost">Home</Button>
-              
+
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost">Products</Button>
+                  <Button variant="ghost">Products ▼</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem>One</DropdownMenuItem>
                   <DropdownMenuItem>Two</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              
+
               <Button variant="ghost">Pricing</Button>
               <Button variant="ghost">Contact</Button>
             </div>
           </div>
-          
+
           {/* Emergency Button */}
           <Button variant="destructive">Emergency</Button>
         </nav>
