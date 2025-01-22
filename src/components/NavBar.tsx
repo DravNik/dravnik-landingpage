@@ -23,7 +23,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-between">
           {/* Logo/Name */}
           <div className="flex items-center space-x-8">
-            <h1 className="text-2xl font-bold">Water Management</h1>
+            <h1 className="text-2xl font-bold">Water Lane</h1>
           </div>
 
           {/* Hamburger Button for small screens */}
