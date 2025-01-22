@@ -56,7 +56,7 @@ const NavBar = () => {
           </div>
 
           {/* Emergency Button */}
-          <Button variant="destructive">Emergency</Button>
+          <Button variant="destructive">Dashboard</Button>
         </nav>
       </div>
     </header>

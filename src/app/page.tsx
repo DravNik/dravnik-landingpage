@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import { HeroVideoDialogDemo } from "@/components/hero";
 import PricingWrapper from "@/components/PricingWrapper";
 import { HeroDemo } from "@/components/hero-animated";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -21,45 +22,9 @@ export default function Home() {
       </section>
 
       <PricingWrapper />
-
-      <footer className="w-full bg-gray-800 text-white py-6">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-          <div className="text-lg font-bold mb-4 md:mb-0">Water Management</div>
-
-          <ul className="flex flex-wrap items-center justify-center space-x-4 mb-4 md:mb-0">
-            <li>
-              <a href="#" className="hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-
-          <div className="text-sm text-right">
-            <p>Location: 123, NIBM, Pune</p>
-            <p>Email: admin@watermanagement.com</p>
-            <p>Phone: 4894548465</p>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-700 justify-between text-center text-xs py-1 mt-4">
-          © {new Date().getFullYear()} Water Management. All rights reserved.
-        </div>
-      </footer>
+      <section>
+        <Footer />
+      </section>
     </main>
   );
 }
