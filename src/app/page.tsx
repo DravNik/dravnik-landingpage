@@ -1,43 +1,65 @@
 import NavBar from "@/components/NavBar";
-import { HeroVideoDialogDemo } from "@/components/hero"; // Adjust the path to where you have HeroVideoDialogDemo
-import PricingWrapper from "@/components/PricingWrapper"; // Import the wrapper
+import { HeroVideoDialogDemo } from "@/components/hero";
+import PricingWrapper from "@/components/PricingWrapper";
+import { HeroDemo } from "@/components/hero-animated";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100">
+    <main className="min-h-screen flex flex-col bg-gray-100">
       <NavBar />
 
-      {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center w-full p-8 min-h-screen">
-        {/* Left side content */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl font-bold mb-4">Water Management</h1>
-          <p className="text-lg mb-4">
-            Welcome to the Water Management project! We aim to provide
-            innovative solutions for water conservation and efficient usage.
-          </p>
-          <p className="text-lg mb-4">
-            Our system utilizes state-of-the-art technology to monitor and
-            manage water resources in real-time. From automated irrigation
-            systems to smart sensors, we strive to make water management easier
-            and more effective.
-          </p>
-          <p className="text-lg">
-            Join us in creating a sustainable future where every drop counts.
-            Water is life, and it's time we protect it together.
-          </p>
-        </div>
+      {/* Hero Section - Animated Hero */}
+      <section className="min-h-screen w-full flex items-center justify-center">
+        <HeroDemo />
+      </section>
 
-        {/* Right side video dialog */}
+      {/* Hero Section - Original */}
+      <section className="flex flex-col md:flex-row items-center justify-center w-full p-8 min-h-screen">
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <HeroVideoDialogDemo />
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="bg-white py-20">
-        <PricingWrapper />
-      </section>
+      <PricingWrapper />
+
+      <footer className="w-full bg-gray-800 text-white py-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+          <div className="text-lg font-bold mb-4 md:mb-0">Water Management</div>
+
+          <ul className="flex flex-wrap items-center justify-center space-x-4 mb-4 md:mb-0">
+            <li>
+              <a href="#" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <div className="text-sm text-right">
+            <p>Location: 123, NIBM, Pune</p>
+            <p>Email: admin@watermanagement.com</p>
+            <p>Phone: 4894548465</p>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 justify-between text-center text-xs py-1 mt-4">
+          © {new Date().getFullYear()} Water Management. All rights reserved.
+        </div>
+      </footer>
     </main>
   );
 }

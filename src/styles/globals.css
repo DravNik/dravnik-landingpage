@@ -70,3 +70,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* styles/globals.css */
+
+@layer utilities {
+  .dotted-background {
+    background-image: radial-gradient(rgb(226 232 240) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -10px -10px;
+  }
+
+  .dark .dotted-background {
+    background-image: radial-gradient(rgb(51 65 85) 1px, transparent 1px);
+  }
+}
