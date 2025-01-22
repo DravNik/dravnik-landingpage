@@ -1,13 +1,14 @@
 import NavBar from "@/components/NavBar";
 import { HeroVideoDialogDemo } from "@/components/hero"; // Adjust the path to where you have HeroVideoDialogDemo
+import PricingWrapper from "@/components/PricingWrapper"; // Import the wrapper
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-100">
+    <main className="bg-gray-100">
       <NavBar />
 
-      {/* Hero Section with Flexbox Layout */}
-      <section className="flex flex-col md:flex-row items-center justify-center w-full p-8">
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row items-center justify-center w-full p-8 min-h-screen">
         {/* Left side content */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Water Management</h1>
@@ -31,6 +32,11 @@ export default function Home() {
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <HeroVideoDialogDemo />
         </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="bg-white py-20">
+        <PricingWrapper />
       </section>
     </main>
   );
