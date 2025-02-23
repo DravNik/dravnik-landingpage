@@ -49,7 +49,9 @@ const NavBar = () => {
         {/* Dashboard Button */}
         <Button
           variant="destructive"
-          onClick={() => (window.location.href = "/dashboard")}
+          onClick={() =>
+            (window.location.href = "https://dashboard.helplanes.live/")
+          }
         >
           Dashboard
         </Button>
