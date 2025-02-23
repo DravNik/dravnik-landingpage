@@ -31,11 +31,11 @@ const NavBar = () => {
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Products ▼</Button>
+              <Button variant="ghost">Products</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>One</DropdownMenuItem>
-              <DropdownMenuItem>Two</DropdownMenuItem>
+              <DropdownMenuItem>Product List</DropdownMenuItem>
+              <DropdownMenuItem>Order </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/pricing" className="hover:text-blue-500">
