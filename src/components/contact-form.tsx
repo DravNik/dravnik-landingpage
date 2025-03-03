@@ -27,16 +27,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// 1) Import 'toast' from sonner
 import { toast } from "sonner";
 
-// 2) (Optional) Read environment variables
-// Just hardcode them for GitHub Pages
-const SERVICE_ID = "service_sv5xc0e";
-const TEMPLATE_ID = "template_c0sb9j6";
-const PUBLIC_KEY = "KIDBTpyN0Te6ZQfpt";
+// 1) Remove environment variables and hardcode your EmailJS keys:
+const SERVICE_ID = "service_sv5xc0e"; // Replace with your actual Service ID
+const TEMPLATE_ID = "template_c0sb9j6"; // Replace with your actual Template ID
+const PUBLIC_KEY = "KIDBTpyN0Te6ZQfpt"; // Replace with your actual Public Key
 
-// 3) Define Zod schema
+// 2) Define Zod schema for validation
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
   email: z.string().email({ message: "Please enter a valid email address" }),
@@ -59,25 +57,24 @@ export default function ContactForm() {
     },
   });
 
-  // Submit handler
+  // 3) Submit handler
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
 
     try {
-      // 4) Use emailjs to send email
+      // 4) Use emailjs to send the email
       const result = await emailjs.send(
-        SERVICE_ID, // e.g. "service_abc123"
-        TEMPLATE_ID, // e.g. "template_def456"
+        SERVICE_ID,
+        TEMPLATE_ID,
         {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
         },
-        PUBLIC_KEY // e.g. "XYz123AbcDEF"
+        PUBLIC_KEY
       );
 
       if (result.text === "OK") {
-        // 5) Show success toast
         toast.success("Message sent!", {
           description:
             "Thank you for your message. We'll get back to you soon.",
@@ -85,7 +82,6 @@ export default function ContactForm() {
         form.reset();
       }
     } catch (error) {
-      // 6) Show error toast
       toast.error("Something went wrong", {
         description: "Your message couldn't be sent. Please try again later.",
       });
