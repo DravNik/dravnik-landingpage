@@ -34,7 +34,11 @@ const NavBar = () => {
               <Button variant="ghost">Products ▿</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>Buy Now</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/shop" className="hover:text-blue-500">
+                  Shop
+                </Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>Sell your product</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
