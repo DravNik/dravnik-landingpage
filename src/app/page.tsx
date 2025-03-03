@@ -21,7 +21,6 @@ export default function Home() {
         </div>
       </section>
 
-      <PricingWrapper />
       <section>
         <Footer />
       </section>

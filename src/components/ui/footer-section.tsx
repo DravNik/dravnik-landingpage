@@ -23,16 +23,16 @@ import {
 } from "lucide-react";
 
 function Footerdemo() {
-  const [isDarkMode, setIsDarkMode] = React.useState(true);
+  const [isLightMode, setIsLightMode] = React.useState(true);
   const [isChatOpen, setIsChatOpen] = React.useState(false);
 
   React.useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
+    if (isLightMode) {
+      document.documentElement.classList.add("light");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("light");
     }
-  }, [isDarkMode]);
+  }, [isLightMode]);
 
   return (
     <footer className="relative border-t bg-background text-foreground transition-colors duration-300">
@@ -181,20 +181,20 @@ function Footerdemo() {
             <div className="flex items-center space-x-2">
               <Sun className="h-4 w-4" />
               <Switch
-                id="dark-mode"
-                checked={isDarkMode}
-                onCheckedChange={setIsDarkMode}
+                id="light-mode"
+                checked={isLightMode}
+                onCheckedChange={setIsLightMode}
               />
               <Moon className="h-4 w-4" />
-              <Label htmlFor="dark-mode" className="sr-only">
-                Toggle dark mode
+              <Label htmlFor="light-mode" className="sr-only">
+                Toggle light mode
               </Label>
             </div>
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Remote Lanes. All rights reserved.
+            © 2024 DravNik. All rights reserved.
           </p>
           <nav className="flex gap-4 text-sm">
             <a href="#" className="transition-colors hover:text-primary">
