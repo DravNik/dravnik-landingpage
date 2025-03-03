@@ -29,19 +29,9 @@ const NavBar = () => {
           <Link href="/" className="hover:text-blue-500">
             Home
           </Link>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Products ▿</Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link href="/shop" className="hover:text-blue-500">
-                  Shop
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>Sell your product</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Link href="/shop" className="hover:text-blue-500">
+            Shop
+          </Link>
           <Link href="/pricing" className="hover:text-blue-500">
             Pricing
           </Link>
