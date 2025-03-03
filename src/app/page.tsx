@@ -1,6 +1,5 @@
 import NavBar from "@/components/NavBar";
 import { HeroVideoDialogDemo } from "@/components/hero";
-import PricingWrapper from "@/components/PricingWrapper";
 import { HeroDemo } from "@/components/hero-animated";
 import { Footer } from "@/components/footer";
 
