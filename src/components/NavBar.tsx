@@ -64,15 +64,13 @@ const NavBar = () => {
           <Link href="/" className="hover:text-blue-500" onClick={toggleMenu}>
             Home
           </Link>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Products ▼</Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>One</DropdownMenuItem>
-              <DropdownMenuItem>Two</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Link
+            href="/shop"
+            className="hover:text-blue-500"
+            onClick={toggleMenu}
+          >
+            Shop
+          </Link>
           <Link
             href="/pricing"
             className="hover:text-blue-500"
