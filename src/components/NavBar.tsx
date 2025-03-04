@@ -22,10 +22,18 @@ const NavBar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo/Name */}
-        <h1 className="text-2xl font-bold">DravNik</h1>
+        <div className="flex items-center space-x-2">
+          <img
+            src="/images/favicon-removebg-preview.png"
+            alt="DravNik Logo"
+            className="w-12 h-auto"
+          />
+
+          <h1 className="text-2xl font-audiowide">DravNik</h1>
+        </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-6 font-audiowide">
           <Link href="/" className="hover:text-blue-500">
             Home
           </Link>
@@ -34,6 +42,9 @@ const NavBar = () => {
           </Link>
           <Link href="/pricing" className="hover:text-blue-500">
             Pricing
+          </Link>
+          <Link href="/joinus" className="hover:text-blue-500">
+            Join Us
           </Link>
           <Link href="/contact" className="hover:text-blue-500">
             Contact
@@ -60,7 +71,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md p-4 absolute top-14 left-0 right-0 flex flex-col items-center space-y-4">
+        <div className="font-audiowide md:hidden bg-white shadow-md p-4 absolute top-14 left-0 right-0 flex flex-col items-center space-y-4">
           <Link href="/" className="hover:text-blue-500" onClick={toggleMenu}>
             Home
           </Link>
@@ -77,6 +88,13 @@ const NavBar = () => {
             onClick={toggleMenu}
           >
             Pricing
+          </Link>
+          <Link
+            href="/joinus"
+            className="hover:text-blue-500"
+            onClick={toggleMenu}
+          >
+            Join Us
           </Link>
           <Link
             href="/contact"

@@ -4,10 +4,24 @@
 @tailwind utilities;
 
 /* Default body font */
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Audiowide";
+  src: url("/fonts/Audiowide-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Apply font globally */
+body {
+  font-family: "Audiowide", Arial, Helvetica, sans-serif;
+}
+
+/* Custom font class for div and h2 */
+.font-audiowide {
+  font-family: "Audiowide", Arial, Helvetica, sans-serif;
+}
+
+/* Tailwind theme settings */
 @layer base {
   :root {
     /* Light mode variables */

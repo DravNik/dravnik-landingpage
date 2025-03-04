@@ -72,25 +72,25 @@ function Footerdemo() {
                 Home
               </a>
               <a
-                href="#"
+                href="/shop"
                 className="block transition-colors hover:text-primary"
               >
-                About Us
+                Shop
               </a>
               <a
-                href="#"
+                href="/pricing"
                 className="block transition-colors hover:text-primary"
               >
-                Services
+                Pricing
               </a>
               <a
-                href="#"
+                href="/joinus"
                 className="block transition-colors hover:text-primary"
               >
-                Products
+                Join Us
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="block transition-colors hover:text-primary"
               >
                 Contact
@@ -102,8 +102,8 @@ function Footerdemo() {
             <address className="space-y-2 text-sm not-italic">
               <p>NIBM Office</p>
               <p>Pune City, 411048</p>
-              <p>Phone: (+91) 9371565244</p>
-              <p>Email: hello@waterlanes.com</p>
+              <p>Phone: (+91) 820643292</p>
+              <p>Email: hello@darvnik.site</p>
             </address>
           </div>
           <div className="relative">
