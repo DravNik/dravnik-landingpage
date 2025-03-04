@@ -17,47 +17,75 @@ function PricingDemo() {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <PricingCard
-            tier="Free"
-            price="$0/mo"
-            bestFor="Best for 1-5 users"
-            CTA="Get started free"
+            tier="Home"
+            price="₹-/mo"
+            bestFor="At most 5 automation devices"
+            CTA="Get a Quote"
             benefits={[
-              { text: "One workspace", checked: true },
-              { text: "Email support", checked: true },
-              { text: "1 day data retention", checked: false },
-              { text: "Custom roles", checked: false },
-              { text: "Priority support", checked: false },
-              { text: "SSO", checked: false },
+              { text: "Real-time Monitoring", checked: true },
+              { text: "Automated Controls", checked: true },
+              { text: "7 days of data analytics", checked: true },
+              { text: "2 free maintenances/year", checked: true },
+              { text: "Priority support", checked: true },
+              { text: "Kill Switch", checked: true },
+              {
+                text: "Centeralized Systems",
+                checked: false,
+              },
+              {
+                text: "Multiple Monitors",
+                checked: false,
+              },
             ]}
           />
           <PricingCard
             tier="Pro"
-            price="$79/mo"
-            bestFor="Best for 5-50 users"
-            CTA="14-day free trial"
+            price="₹-/mo"
+            bestFor="For schools, hotels, societies, etc."
+            CTA="Get a Quote/Demo"
             benefits={[
-              { text: "Five workspaces", checked: true },
-              { text: "Email support", checked: true },
-              { text: "7 day data retention", checked: true },
-              { text: "Custom roles", checked: true },
-              { text: "Priority support", checked: false },
-              { text: "SSO", checked: false },
+              { text: "Real-time Monitoring", checked: true },
+              { text: "Automated Controls", checked: true },
+              { text: "1 month of data analytics", checked: true },
+              { text: "6 free maintenances/year", checked: true },
+              { text: "Priority support", checked: true },
+              { text: "Kill Switch", checked: true },
+              {
+                text: "Centeralized Systems",
+                checked: true,
+              },
             ]}
           />
           <PricingCard
-            tier="Enterprise"
+            tier="Industrial"
             price="Contact us"
             bestFor="Best for 50+ users"
-            CTA="Contact us"
+            CTA="Get a Quote/Demo"
             benefits={[
-              { text: "Unlimited workspaces", checked: true },
-              { text: "Email support", checked: true },
-              { text: "30 day data retention", checked: true },
-              { text: "Custom roles", checked: true },
-              { text: "Priority support", checked: true },
-              { text: "SSO", checked: true },
+              { text: "Real-time Monitoring", checked: true },
+              { text: "Automated Controls", checked: true },
+              { text: "1 year of data analytics", checked: true },
+              { text: "12 free maintenances/year", checked: true },
+              { text: "Highest Priority support", checked: true },
+              { text: "Daily data insights", checked: true },
+
+              {
+                text: "Centeralized Systems",
+                checked: true,
+              },
+              {
+                text: "Multiple Monitors",
+                checked: true,
+              },
             ]}
           />
+        </div>
+        <br></br>
+        <div>
+          ⓘ PS: there will be a seperate subscription based plans for additional
+          analystics and data storage. <br></br>You can contact us, for any
+          additional info{" "}
+          <a href="mailto:helplanes@gmail.com">support@dravnik.site</a> !{" "}
         </div>
       </div>
     </section>
