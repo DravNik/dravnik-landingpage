@@ -18,7 +18,7 @@ function PricingDemo() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <PricingCard
             tier="Home"
-            price="₹-/mo"
+            price="₹799/yr*"
             bestFor="At most 5 automation devices"
             CTA="Get a Quote"
             benefits={[
@@ -39,8 +39,8 @@ function PricingDemo() {
             ]}
           />
           <PricingCard
-            tier="Pro"
-            price="₹-/mo"
+            tier="Communities"
+            price="₹4999/yr*"
             bestFor="For schools, hotels, societies, etc."
             CTA="Get a Quote/Demo"
             benefits={[
