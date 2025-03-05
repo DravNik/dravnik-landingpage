@@ -36,9 +36,7 @@ export default function JoinusPage() {
               placeholder="Enter your name"
               {...register("name", { required: "Name is required" })}
             />
-            {errors.name && (
-              <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
-            )}
+            <p className="text-red-500 text-sm mt-1"></p>
           </div>
 
           {/* Email */}
@@ -49,11 +47,7 @@ export default function JoinusPage() {
               placeholder="Enter your email"
               {...register("email", { required: "Email is required" })}
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm mt-1">
-                {errors.email.message}
-              </p>
-            )}
+            <p className="text-red-500 text-sm mt-1"></p>
           </div>
 
           {/* Role Dropdown */}
@@ -70,9 +64,7 @@ export default function JoinusPage() {
               <option value="engineer">Engineer</option>
               <option value="investor">Investor</option>
             </select>
-            {errors.role && (
-              <p className="text-red-500 text-sm mt-1">{errors.role.message}</p>
-            )}
+            <p className="text-red-500 text-sm mt-1"></p>
           </div>
 
           {/* Message Field */}
@@ -82,11 +74,7 @@ export default function JoinusPage() {
               placeholder="Enter your message"
               {...register("message", { required: "Message is required" })}
             />
-            {errors.message && (
-              <p className="text-red-500 text-sm mt-1">
-                {errors.message.message}
-              </p>
-            )}
+            <p className="text-red-500 text-sm mt-1"></p>
           </div>
 
           {/* Submit Button */}
